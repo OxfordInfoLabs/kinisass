@@ -1,0 +1,77 @@
+.table
+
+  border-collapse: collapse
+  border-spacing: 0
+  width: 100%
+  text-align: left
+  &.min500
+    min-width: 500px
+  &.tfixed
+    table-layout: fixed
+  &.cells
+    td, th
+      border: 1px solid #ddd
+      &.border30
+        border-color: rgba(255,255,255,0.3)
+      &.border-t0
+        border-top-color: transparent
+      &.border-r0
+        border-right-color: transparent
+      &.border-b0
+        border-bottom-color: transparent
+      &.border-l0
+        border-left-color: transparent
+      &.vtop
+        vertical-align: top
+
+
+  &.t-center-0111
+    td, th
+      text-align: center
+      &:first-child
+        text-align: left
+  &.table-last
+    tbody
+      tr
+        td,
+        th
+          border-bottom: none
+        &:last-child
+          td,
+          th
+            border-bottom: 1px solid #ddd
+  &.table-striped
+    tbody
+      tr:nth-of-type(odd)
+        background: #f6f6f6
+
+  &,
+  &.table-striped
+    tbody
+      tr
+        &.active
+          background: #999
+
+  &.table-hover
+    tbody
+      tr
+        &:hover
+          background: #999
+
+  td,
+  th
+    border-bottom: 1px solid #ddd
+    padding: .5rem 1rem
+
+
+  th
+    border-bottom-width: 2px
+
+  tfoot
+    tr
+      th
+        border-top-width: 2px
+        border-top-color: #ddd
+        border-top-style: solid
+        border-bottom: none
+

@@ -1,0 +1,20 @@
+{
+  "name": "kinisass",
+  "version": "1.0.4",
+  "description": "Oxford Information Labs Sass Library Rough and Opinionated",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OxfordInfoLabs/kinisass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OxfordInfoLabs/kinisass/issues"
+  },
+  "homepage": "https://github.com/OxfordInfoLabs/kinisass#readme",
+  "dependencies": {
+    "mathsass": "^0.11.0",
+    "modularscale-sass": "^3.0.10"
+  }
+}

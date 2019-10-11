@@ -1,0 +1,46 @@
+.bkimg
+  background-repeat: no-repeat
+  background-position: center
+
+.round
+  border-radius: 50%
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25)
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25)
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25)
+  &100
+    height: 100px
+    width: 100px
+
+.gauze-over
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background: linear-gradient(to bottom, black, rgba(255, 0, 0, 0))
+
+.f-white
+  filter: brightness(0) invert(1)
+
+.filter-darker
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    filter: brightness(80%)
+
+  > div
+    position: relative
+  &.b-cover
+    &::before
+      @extend .b-cover
+
+
+
+.no-repeat
+  background-repeat: no-repeat
+  background-position: right top
