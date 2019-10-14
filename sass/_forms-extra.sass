@@ -8,7 +8,7 @@ $checkbox-background: green !default
   left: 0
   height: 25px
   width: 25px
-  background-color: #eee
+  background-color: #dddddd
   &:after
     content: ""
     position: absolute
@@ -58,3 +58,63 @@ $checkbox-background: green !default
       -ms-transform: rotate(45deg)
       transform: rotate(45deg)
 
+.radiocheck
+  display: block
+  position: relative
+  padding-right: 35px
+  margin-bottom: 12px
+  cursor: pointer
+  font-size: 1rem
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+
+  input
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    height: 0
+    width: 0
+
+
+
+  .checkmark
+    position: absolute
+    top: 0
+    left: auto
+    right: 0
+    height: 25px
+    width: 25px
+    background-color: #dddddd
+    border-radius: 50%
+
+
+
+  &:hover input ~ .checkmark
+    background-color: #ccc
+
+
+  input:checked ~ .checkmark
+    background-color: $checkbox-background
+
+
+
+  .checkmark:after
+    content: ""
+    position: absolute
+    display: none
+
+
+  input:checked ~ .checkmark:after
+    display: block
+
+
+  .checkmark:after
+    top: 9px
+    left: 9px
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    background: white

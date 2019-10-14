@@ -181,9 +181,16 @@ a.but, button.but
   &bk
     background-color: black
     color: white
-    border: .15em solid white
     &:hover
-      background-color: black
+      background-color: rgba(black,0.5)
+      color: white
+
+  &lt
+    background-color: map_get($colours,brand-lighter)
+    color: white
+    border: .15em solid map_get($colours,brand-lighter)
+    &:hover
+      background-color: map_get($colours,brand-lighter)
       color: white
 
   &gn
