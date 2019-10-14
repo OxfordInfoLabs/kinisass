@@ -33,7 +33,7 @@ a.but, button.but
   font-weight: 500
   line-height: $base-line-height
   margin: 0 .5rem
-  padding: .5rem 1.0rem
+  padding: .5rem
   text-align: center
   text-decoration: none
   text-transform: none
@@ -84,6 +84,7 @@ a.but, button.but
     font-size: 1em
     line-height: $base-line-height
     font-weight: bold
+
     &.normal
       font-weight: 400
     &.medium
@@ -107,6 +108,8 @@ a.but, button.but
       text-decoration: none
     &.text-colour
       color: $text-color
+    &.text-left
+      text-align: left
 
   &:first-child
     margin-left: 0
@@ -114,6 +117,7 @@ a.but, button.but
 
   &:last-child
     margin-right: 0
+
 
 
   // sizes
@@ -133,9 +137,6 @@ a.but, button.but
     max-width: 100%
 
   &.ic
-    &
-      padding-left: 2em
-      padding-right: 2em
     i
       display: flex
       align-items: center
@@ -143,12 +144,16 @@ a.but, button.but
       top: 0
       bottom: 0
     &r
+      //padding-right: 2em
       i
         right: .5em
 
+
     &l
+      //padding-left: 2em
       i
         left: .5em
+
   &mobfull
     @media screen and (max-width: $tablet)
       margin-left: 0
