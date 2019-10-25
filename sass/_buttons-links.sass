@@ -19,20 +19,24 @@ button
   cursor: pointer
   font-family: $base-font-family
 
+a.but
+  border-color: transparent
 
+button.but
+  border-color:  map_get($colours,brand)
 
 a.but, button.but
   background-color: map_get($colours, brand)
-  border: 0
+  border-width: .15em
+  border-style: solid
   border-radius: 4px
   color: map_get($colours, white)
-  display: inline-block
   &[data-state='hide']
     display: none
   font-size: ms()
-  font-weight: 500
+  font-weight: 600
   line-height: $base-line-height
-  margin: 0 .5rem
+  //margin: 0 .5rem
   padding: .5rem
   text-align: center
   text-decoration: none
@@ -40,6 +44,7 @@ a.but, button.but
   transition: opacity .2s ease-in-out
   white-space: nowrap
   position: relative
+
 
 
   &:focus,
@@ -118,23 +123,34 @@ a.but, button.but
   &:last-child
     margin-right: 0
 
-
+  &cta
+    font-size: ms(1.3)
+    font-weight: bold
 
   // sizes
   &lg
-    font-size: ms(3)
-    padding: 1rem 1.5rem
+    font-size: ms(1.3)
+    //font-weight: bold
 
 
   &sm
-    font-size: ms()
-    padding: .2rem .6rem
+    font-size: ms(-0.5)
+    padding: .3rem .6rem
 
   &blk
     margin-left: 0
     margin-right: 0
+    display: block
     width: 100%
     max-width: 100%
+    &lg
+      @media screen and (min-width: $tablet)
+        margin-left: 0
+        margin-right: 0
+        display: block
+        width: 100%
+        max-width: 100%
+
 
   &.ic
     i
@@ -163,6 +179,8 @@ a.but, button.but
 
   &muted
     background-color: map_get($colours,gd)
+    border-color: map_get($colours,gd)
+    color: #555
     &:hover
       color: map_get($colours,ga)
       background-color: rgba(map_get($colours,gd), .8)
@@ -213,6 +231,7 @@ a.but, button.but
     &:hover
       background-color: map_get($colours,orange)
       color: white
+
 
 
 .chevron-right
