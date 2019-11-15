@@ -1,8 +1,11 @@
 {
   "name": "kinisass",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Oxford Information Labs Sass Library Rough and Opinionated",
   "main": "index.js",
+  "scripts": {
+    "publish": "bump patch; npm publish"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OxfordInfoLabs/kinisass.git"
@@ -13,8 +16,9 @@
     "url": "https://github.com/OxfordInfoLabs/kinisass/issues"
   },
   "homepage": "https://github.com/OxfordInfoLabs/kinisass#readme",
-  "dependencies": {
+  "devDependencies": {
     "mathsass": "^0.11.0",
-    "modularscale-sass": "^3.0.10"
+    "modularscale-sass": "^3.0.10",
+    "version-bump-prompt": "^5.0.1"
   }
 }
