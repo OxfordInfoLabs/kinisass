@@ -60,14 +60,25 @@
 
   td,
   th
-    border-bottom: 1px solid #ddd
-    padding: .5rem 1rem
+    padding: .35rem 1rem
     .text-left
       text-align: left
+    &.spacer
+      padding: 0
+      height: 5px
+      border-width: 0
+
+  tbody
+    tr:last-child
+      td
+        border-bottom: 1px solid #ddd
 
 
-  th
-    border-bottom-width: 2px
+
+  thead
+    tr:last-child
+      th, td
+        border-bottom: 2px solid #ddd
 
   tfoot
     tr
