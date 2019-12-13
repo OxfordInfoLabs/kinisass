@@ -14,19 +14,20 @@ input
   border-width: 1px
   border-style: solid
   border-color: map_get($colours,ga)
-  -webkit-border-radius: 5px
-  -moz-border-radius: 5px
-  border-radius: 5px
+  //-webkit-border-radius: 5px
+  //-moz-border-radius: 5px
+  //border-radius: 5px
   &muted
     border-color: map_get($colours,gd)
 
 .but-widget
   display: flex
   background-color: white
-  border: 1px solid #cccccc
-  color: #aaaaaa
-  &.text-colour
-    color: $text-color
+  border: 1px solid $brand
+  color: $brand
+  &.muted
+    color: #aaaaaa
+    border-color: #aaaaaa
   line-height: 2rem
   height: 2rem
   width: 2rem

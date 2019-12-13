@@ -1,10 +1,12 @@
+$brand: #004875;
+$green: #9ACD35;
 
 $colours: (
-	brand: #004875,
+	brand: $brand,
 	brand-2: #6C8F2F,
 	brand-lighter: #007ac1,
 	brand-bright: #00a1ff,
-	green: #9ACD35,
+	green: $green,
 	orange: #FFB400,
 	red: #b00,
 	g2: #222222,
@@ -22,7 +24,9 @@ $colours: (
 	loud: #000,
 	white: #fff,
 	bk: #000,
-	rgba40: rgba(0,0,0,.4)
+	rgba40: rgba(0,0,0,.4),
+				greenshade: rgba($green,0.1)
+
 );
 
 

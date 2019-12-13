@@ -1,0 +1,63 @@
+.prod
+  @extend .bor2
+  @extend .bortrans
+  &.prod-selected
+    @extend .borgn
+    @extend .greenshade
+
+
+#product-builder-widget-wrap
+  #product-builder-widget
+    .ctrls
+      .but
+        margin: .5rem 0 0 0
+  @media screen and (min-width: $tablet)
+    width: 25%
+    .totals
+      text-align: center
+
+  @media screen and (max-width: $tablet - 1)
+
+    #product-builder-widget
+      display: flex
+      width: 100%
+      position: fixed
+      bottom: 0
+      left: 0
+      right: 0
+      z-index: 100
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)
+      #dec
+        position: absolute
+        width: 40px
+        height: 24px
+        top: -18px
+        left: calc(50% - 20px)
+        border-radius: 1rem 1rem 0 0
+      .totals
+        width: 33%
+
+      .ctrls
+        flex: 1
+
+a.butsoftwh, button.butsoftwh
+  margin: 0
+  background-color: white
+  color: $text-color
+  border: 1px solid #bbbbbb
+  &:focus,
+  &:hover,
+  &:active
+    background-color: white
+    color: $text-color
+
+.tippy-tooltip
+  &.net-green-theme
+    background-color: $green
+    font-family: $base-font-family
+    &[data-placement^='top']
+      .tippy-arrow
+        border-top-color: $green
+    &[data-placement^='bottom']
+      .tippy-arrow
+        border-bottom-color: $green
