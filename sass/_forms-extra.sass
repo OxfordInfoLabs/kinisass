@@ -20,19 +20,26 @@ $checkbox-hover: lighten($checkbox-background, 10%) !default
     &:hover
       opacity: 1
     &::-webkit-slider-thumb
-      -webkit-appearance: none /* Override default look */
+      /* Override default look */
+      -webkit-appearance: none
       appearance: none
-      width: 25px /* Set a specific slider handle width */
-      height: 25px /* Slider handle height */
+      /* Set a specific slider handle width */
+      width: 25px
+      /* Slider handle height */
+      height: 25px
       border-radius: 50%
       background: $checkbox-background
-      cursor: pointer /* Cursor on hover */
+      /* Cursor on hover */
+      cursor: pointer
     &::-moz-range-thumb
-      width: 25px /* Set a specific slider handle width */
-      height: 25px /* Slider handle height */
+      /* Set a specific slider handle width */
+      width: 25px
+      /* Slider handle height */
+      height: 25px
       border-radius: 50%
       background: $checkbox-background
-      cursor: pointer /* Cursor on hover */
+      /* Cursor on hover */
+      cursor: pointer
 
 $switch-height: 30px
 
