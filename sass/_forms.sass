@@ -2,7 +2,8 @@
 input
   font-size: 1rem
   font-family: $base-font-family
-  border: 0
+  border: 1px solid #ccc
+  padding: .75rem
   margin-bottom: 0
   &:hover, &:focus
     //border: 0
@@ -14,11 +15,16 @@ input
   border-width: 1px
   border-style: solid
   border-color: map_get($colours,ga)
-  //-webkit-border-radius: 5px
-  //-moz-border-radius: 5px
-  //border-radius: 5px
+  button
+    border: 0
+
   &muted
     border-color: map_get($colours,gd)
+    button
+      background: map_get($colours,gd)
+  input
+    border: 0
+
 
 .but-widget
   display: flex

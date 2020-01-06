@@ -37,7 +37,9 @@ a.but, button.but
   font-weight: 600
   line-height: $base-line-height
   //margin: 0 .5rem
-  padding: .3em
+  padding: .75em
+  &.p035
+    padding: .35em
   text-align: center
   text-decoration: none
   text-transform: none
@@ -122,6 +124,8 @@ a.but, button.but
       color: $text-color
     &.text-left
       text-align: left
+    &.small
+      @extend .small
 
   &:first-child
     margin-left: 0
@@ -136,13 +140,13 @@ a.but, button.but
 
   // sizes
   &lg
-    font-size: ms(1.2)
+    font-size: ms(0.8)
     //font-weight: bold
 
 
   &sm
     font-size: ms(-0.5)
-    //padding: .3rem .6rem
+    padding: .5em
 
   &blk
     margin-left: 0

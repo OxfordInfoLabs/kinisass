@@ -1,7 +1,13 @@
 .prod
   //@extend .bor2
   &.prod-selected
-    @extend .bor2
+    border-top-width: 2px
+    border-bottom-width: 2px
+    border-style: solid
+    @media screen and (min-width: $tablet)
+      border-left-width: 2px
+      border-right-width: 2px
+
     @extend .borgn
     @extend .greenshade
 
