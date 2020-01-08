@@ -1,6 +1,6 @@
 {
   "name": "kinisass",
-  "version": "1.0.33",
+  "version": "1.0.34",
   "description": "Oxford Information Labs Sass Library Rough and Opinionated",
   "main": "index.js",
   "scripts": {
