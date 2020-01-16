@@ -1,15 +1,59 @@
+
+.build-item
+  min-height: 5rem
+  border-width: 1px
+  border-color: #ddd
+  border-style: solid
+  background-color: white
+  margin-bottom: .75rem
+  display: flex
+  padding: 1rem 1.75rem
+  justify-content: space-between
+  align-items: center
+  border-radius: 4px
+
+  &:hover
+    cursor: pointer
+    border-color: #aaa
+  &.build-item-selected
+    border-width: 2px
+    border-color: map_get($colours,green)
+
+
 .prod
   //@extend .bor2
+
+  &.featured
+    border-top-width: 1px
+    border-top-style: solid
+    @media screen and (min-width: $tablet)
+      &.prod-selected
+        + .prod-selected
+          border-top-width: 2px
+  .availability-label
+    &:before
+      content: 'is available'
   &.prod-selected
     border-top-width: 2px
     border-bottom-width: 2px
     border-style: solid
+    + .prod-selected
+      border-top-width: 0
     @media screen and (min-width: $tablet)
       border-left-width: 2px
       border-right-width: 2px
 
     @extend .borgn
     @extend .greenshade
+    .select-label
+      &:before
+        content: ''
+
+  .select-label
+
+    &:before
+      color: map_get($colours,green)
+      content: 'add'
 
 
 #product-builder-widget-wrap
