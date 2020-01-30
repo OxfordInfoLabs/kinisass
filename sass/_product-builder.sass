@@ -20,34 +20,46 @@
     border-color: map_get($colours,green)
 
 
+.prod-parent
+  &.child-selected
+    + .prod-parent
+      &.child-selected
+        .prod
+          &.prod-selected
+            border-top-width: 0
+
 .prod
   //@extend .bor2
 
+  border: 2px solid transparent
+  border-bottom: 1px solid #eee
+
   &.featured
-    border-top-width: 1px
-    border-top-style: solid
-    @media screen and (min-width: $tablet)
-      &.prod-selected
-        + .prod-selected
-          border-top-width: 2px
+    box-shadow: 0px 1px 1px 0px rgba(42, 42, 42,0.15)
+    margin-bottom: 1rem
+
   .availability-label
     &:before
       content: 'is available'
-  &.prod-selected
-    border-top-width: 2px
-    border-bottom-width: 2px
-    border-style: solid
-    + .prod-selected
-      border-top-width: 0
-    @media screen and (min-width: $tablet)
-      border-left-width: 2px
-      border-right-width: 2px
+  &.suggestion
+    @extend .brandshade
 
-    @extend .borgn
+  &.prod-selected
+    border-top-color: $green
+    border-top-width: 2px
+    border-bottom-color: $green
+    border-bottom-width: 2px
+
+    @media screen and (min-width: $tablet)
+      border-left-color: $green
+      border-right-color: $green
+
     @extend .greenshade
     .select-label
       &:before
         content: ''
+    &.suggestion
+      @extend .greenshade
 
   .select-label
 
@@ -57,7 +69,12 @@
 
 
 #product-builder-widget-wrap
+  @media screen and (min-width: $tablet)
+    .stick
+      position: sticky
+      top: 10px
   #product-builder-widget
+
     .ctrls
       .but
         margin: .5rem 0 0 0
