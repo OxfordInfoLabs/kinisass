@@ -282,3 +282,23 @@ blockquote
 
 .strike
   text-decoration: line-through
+
+
+dl
+  @extend .flex-grid
+  @extend .flex-wrap
+  @extend .lh12
+
+
+dt
+  font-weight: bold
+  @extend .w-40
+  padding: .5rem .5rem 0 0
+  @media screen and (min-width: $tablet)
+      text-align: right
+
+dd
+  @extend .w-60
+  padding: 0 0 0 .5rem
+  @media screen and (min-width: $tablet)
+      padding-top: .5rem
