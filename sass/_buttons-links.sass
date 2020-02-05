@@ -25,6 +25,7 @@ a.but
 button.but
   //border-color:  map_get($colours,brand)
   border-width: 0
+
 a.but, button.but
   background-color: map_get($colours, brand)
   //border-width: .15em
@@ -162,6 +163,10 @@ a.but, button.but
         width: 100%
         max-width: 100%
 
+  &disabled
+    opacity: .6
+    &:hover
+      cursor: not-allowed
 
   &.ic
     i
