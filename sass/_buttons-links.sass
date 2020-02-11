@@ -164,10 +164,17 @@ a.but, button.but
         max-width: 100%
 
   &disabled
-    opacity: .7
+
+    &.butgn
+      color: $brand
+      background-color: white
 
     &:hover
       cursor: not-allowed
+      &.butgn
+        color: $brand
+        background-color: white
+      opacity: .7
 
   &.ic
     i
