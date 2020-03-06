@@ -1,6 +1,8 @@
 $brand: #004875;
 $green: #9ACD35;
 $orange: #FFB400;
+$red: #bb0000;
+$brightred: lighten($red,50%);
 
 $colours: (
 	brand: $brand,
@@ -9,13 +11,15 @@ $colours: (
 	brand-bright: #00a1ff,
 	green: $green,
 	orange: $orange,
-	red: #b00,
+	red: $red,
+				brightred: $brightred,
 	g2: #222222,
 	g3: #333333,
 	g5: #555555,
 	g6: #666666,
-	g8: #888888,
-	ga: #aaaaaa,
+				g8: #888888,
+				g9: #999,
+				ga: #aaaaaa,
 	gc: #cccccc,
 	gd: #dddddd,
 	ge: #eeeeee,
