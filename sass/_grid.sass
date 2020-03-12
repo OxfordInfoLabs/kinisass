@@ -36,6 +36,10 @@
 .flex-col
   flex-direction: column
 
+.flex-col-md
+  @media screen and (min-width: $tablet)
+    flex-direction: column
+
 .flex-wrap
   flex-wrap: wrap
 
@@ -170,6 +174,11 @@ $widths: 10 10%, 12 12%, 15 15%, 16 16%, 20 20%, 25 25%, 27 27%, 33 33.33%, 40 4
     @each $i in $widths
       &-#{nth($i, 1)}
         width: nth($i, 2)
+
+.w-50-33
+  width: 50%
+  @media screen and (min-width: $tablet)
+      width: 33%
 
 @media screen and (max-width: $tablet - 1 )
     .w-auto-sm
