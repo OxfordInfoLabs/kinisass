@@ -19,15 +19,20 @@
   justify-content: space-between
   align-items: center
   border-radius: 4px
-
+  &.nohov
+    &:hover
+      cursor: inherit
+      border-color: #ddd
   &:hover
     cursor: pointer
     border-color: #aaa
   &.build-item-selected
     border-width: 2px
     border-color: map_get($colours,green)
-
-
+  &:hover
+    input
+      ~ .checkmark
+        background-color: $checkbox-hover
 .prod-parent
   &.child-selected
     + .prod-parent

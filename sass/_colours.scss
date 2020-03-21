@@ -3,6 +3,7 @@ $green: #9ACD35;
 $orange: #FFB400;
 $red: #bb0000;
 $brightred: lighten($red,50%);
+$brandshade: rgba($brand,0.07);
 
 $colours: (
 	brand: $brand,
@@ -31,7 +32,7 @@ $colours: (
 	bk: #000,
 	rgba40: rgba(0,0,0,.4),
 				greenshade: rgba($green,0.1),
-				brandshade: rgba($brand,0.07)
+				brandshade: $brandshade
 
 );
 
