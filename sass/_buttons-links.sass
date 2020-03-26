@@ -2,7 +2,7 @@
 
 a
   font-weight: 600
-  color: map_get($colours, brand)
+  color: $link-colour
   text-decoration: underline
   &.text-colour
     color: $text-color
@@ -29,7 +29,7 @@ button.but
   border-width: 0
 
 a.but, button.but
-  background-color: map_get($colours, brand)
+  background-color: $link-colour
   //border-width: .15em
   //border-style: solid
   //border-radius: 4px
@@ -74,7 +74,7 @@ a.but, button.but
 
 
   &:hover
-    background-color: rgba(map_get($colours, brand), .8)
+    background-color: rgba($link-colour, .8)
     color: white
     cursor: pointer
     text-decoration: none
@@ -178,13 +178,13 @@ a.but, button.but
   &disabled
 
     &.butgn
-      color: $brand
+      color: $link-colour
       background-color: white
 
     &:hover
       cursor: not-allowed
       &.butgn
-        color: $brand
+        color: $link-colour
         background-color: white
       opacity: .7
 
@@ -223,13 +223,13 @@ a.but, button.but
 
   &wh
     background-color: white
-    color: map_get($colours,brand)
-    border: .15em solid map_get($colours,brand)
+    color: $link-colour
+    border: .15em solid $link-colour
     &:focus,
     &:hover,
     &:active
       background-color: white
-      color: map_get($colours,brand)
+      color: $link-colour
 
     &bk
       border: .15em solid black
