@@ -8,6 +8,10 @@
     min-width: 500px
   &.tfixed
     table-layout: fixed
+  &.rows
+    td
+      border-top: 1px solid #dddddd
+      border-bottom: 1px solid #dddddd
   &.cells
     td, th
       border: 1px solid #ddd
@@ -24,6 +28,8 @@
       &.vtop
         vertical-align: top
 
+  .overflow-x &
+    min-width: $desktop
 
   &.t-center-0111
     td, th
@@ -63,6 +69,9 @@
     padding: .35rem 1rem
     .text-left
       text-align: left
+  &.compact
+    td, th
+      padding: .35rem .5rem
     &.spacer
       padding: 0
       height: 5px
