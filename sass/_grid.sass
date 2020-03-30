@@ -94,6 +94,14 @@
       &:nth-child(even)
         padding-left: .5rem
         padding-right: 0
+  &.stick
+    > div
+      &:nth-child(odd)
+        padding-left: 0
+        padding-right: .5rem
+      &:nth-child(even)
+        padding-left: .5rem
+        padding-right: 0
 
 @media screen and (min-width: $tablet)
   .flex-gutter-3-050
@@ -186,6 +194,13 @@ $widths: 5 5%, 8 8%, 10 10%, 12 12%, 15 15%, 16 16%, 20 20%, 23 23%, 25 25%, 27 
 .w-sm
   @media screen and (max-width: ($tablet - 1))
     width: 100%
+
+.w25sm
+  @media screen and (max-width: $tablet - 1)
+    width: 25%
+.w75sm
+  @media screen and (max-width: $tablet - 1)
+    width: 75%
 
 .gutter-big
   @media screen and (min-width: $desktop)
