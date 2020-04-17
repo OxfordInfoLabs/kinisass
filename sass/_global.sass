@@ -8,6 +8,17 @@
 
 .abs
   position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  &med
+    @media screen and (min-width: $tablet)
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
 
 .hidden
   display: none
@@ -231,6 +242,19 @@
 
 .h50vw
   height: 50vw
+  @media screen and (max-width: $tablet - 1)
+     &sm
+       height: 50vw
 
 .maxh400
   max-height: 400px
+
+.maxh550
+  max-height: 550px
+
+.color-inherit-sm
+  @media screen and (max-width: $tablet - 1)
+    h1
+      color: $headings-colour
+    p
+      color: $text-color

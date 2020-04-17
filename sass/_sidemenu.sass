@@ -42,6 +42,7 @@
 
   .dropdown-container
     display: none
+
     a
       //padding-left: 2rem
       font-weight: normal
@@ -57,6 +58,7 @@
         color: inherit
 
 
+
   .dropdown-btn
     display: flex
     align-items: center
@@ -67,3 +69,7 @@
       border-bottom: none
       i.net-dummy:before
         content: "\e92b"
+
+      + .dropdown-container
+        &.active
+          display: block
