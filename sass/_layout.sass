@@ -206,7 +206,9 @@ body[data-sidebar=show]
   //  transform: scaleY(1)
   &[data-state=hide]
     transform: scaleY(0)
-  &[data-state=show]
+  &.hide
+    transform: scaleY(0)
+  &[data-state=show], &.show
     transform: scaleY(1)
   .h-divider
     border-right: none
