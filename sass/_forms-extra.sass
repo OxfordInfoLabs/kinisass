@@ -225,3 +225,12 @@ $switch-height: 30px
     height: 8px
     border-radius: 50%
     background: white
+
+.form-flex-off
+  [class*="flex"]
+    display: block
+  [class*="w-"]
+    width: 100%
+  .text-right-lg
+    @media screen and (min-width: $tablet)
+        text-align: left
