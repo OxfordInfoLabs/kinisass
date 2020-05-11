@@ -35,14 +35,6 @@
       text-decoration: none
   .leaf
     text-transform: none
-  //@media screen and (max-width: $tablet)
-  //  a
-  //    display: none
-  //  .leaf
-  //    text-transform: uppercase
-  //    font-weight: 600
-  //    &:before
-  //      content: none
-  //  button
-  //    //border: none
-  //    margin-bottom: 0
+  @media screen and (max-width: ($tablet - 1))
+    &.hidden-sm
+      display: none
