@@ -138,8 +138,11 @@ a.but, button.but
       text-align: left
     &.small
       @extend .small
-    //> i
-    //  vertical-align: middle
+
+    &:focus,
+    &:hover,
+    &:active
+      color: $brand
 
   &:first-child
     margin-left: 0
