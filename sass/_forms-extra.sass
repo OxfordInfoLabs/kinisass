@@ -4,6 +4,24 @@ $checkbox-background: map_get($colours, green) !default
 $checkbox-hover: lighten($checkbox-background, 10%) !default
 
 
+.autocomplete
+  width: 100%
+  input
+    width: 100%
+    + div
+      top: 100%
+      left: 0
+      right: 0
+      height: 50vh
+      overflow-y: scroll
+      > div
+        display: block
+        padding: 1rem
+        background-color: white
+        &.active
+          background-color: $brand
+          color: white
+
 .slidecontainer
   width: 100%
   .slider
