@@ -49,6 +49,8 @@
       border-top-width: 1px
 
   &l
+    &0
+      border-left-width: 0
     &1
       border-left-style: solid
       border-left-width: 1px
@@ -66,6 +68,10 @@
     &1
       border-bottom-style: solid
       border-bottom-width: 1px
+      @media screen and (min-width: $tablet)
+        &md
+          border-bottom-style: solid
+          border-bottom-width: 1px
     &2
       border-bottom-style: solid
       border-bottom-width: 2px
@@ -83,6 +89,28 @@
     &3
       border-top-style: solid
       border-top-width: 3px
+
+.borl0m1md
+  @media screen and (min-width: $tablet)
+    border-left-width: 0
+    margin-left: 1px
+
+.borr0md
+  @media screen and (min-width: $tablet)
+    border-right-width: 0
+
+
+.borr0m1md
+  @media screen and (min-width: $tablet)
+    border-right-width: 0
+    margin-right: 1px
+
+.bort0md
+  @media screen and (min-width: $tablet)
+    border-top-width: 0
+
+
+
 
 
 .borbrand

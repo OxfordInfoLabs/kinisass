@@ -27,14 +27,24 @@ body
   display: flex
   flex-direction: column
   overflow-y: hidden
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+    display: block
+
 
 
 #fixedwrap
-  flex: 1
+  @extend .flex1
   overflow-y: auto
   position: relative
+  height: 100%
   .scroll
     height: 100%
+    display: flex
+    flex-direction: column
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+    flex: none
+    .scroll
+      display: block
 
 
 header

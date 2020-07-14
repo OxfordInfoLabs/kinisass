@@ -1,3 +1,21 @@
+
+@for $i from 1 through 40
+  .o#{$i}
+    order: #{$i}
+
+.ft
+  border-top: 1px solid #dddddd
+
+  border-left: 1px solid #dddddd
+  text-align: center
+  > div
+
+    border-right: 1px solid #dddddd
+    &.borr0md
+      @extend .borr0md
+    &.bort0md
+      @extend .bort0md
+
 .table
 
   border-collapse: collapse

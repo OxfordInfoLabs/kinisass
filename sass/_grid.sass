@@ -28,7 +28,6 @@
   &.grid-super
     max-width: $superbody
 
-
 .flex
   display: flex
   &.hidden-sm
@@ -37,7 +36,9 @@
     @extend .hidden-md
 
 .flex1
-  flex: 1
+  -webkit-box-flex: 1
+  -ms-flex: 1 0 0%
+  flex: 1 0 0%
 
 .flex-grid
   display: block
