@@ -8,21 +8,20 @@ $checkbox-hover: lighten($checkbox-background, 10%) !default
   width: 100%
   input
     width: 100%
-    + div
-      top: 100%
-      left: 0
-      right: 0
+  > div
+    top: 100%
+    left: 0
+    right: 0
 
-      > div
-        display: block
-        padding: 1rem
-        background-color: white
-        &.active
-          background-color: $brand
-          color: white
-        &:hover
-          background-color: #eeeeee
-          cursor: pointer
+    div
+      display: block
+      background-color: white
+      &.active
+        background-color: $brand
+        color: white
+      &:hover
+        background-color: #eeeeee
+        cursor: pointer
 
 .slidecontainer
   width: 100%
