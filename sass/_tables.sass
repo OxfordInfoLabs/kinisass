@@ -8,6 +8,10 @@
 
   border-left: 1px solid #dddddd
   text-align: center
+  &.borl0
+    border-left-width: 0
+  &.bort0
+    border-top-width: 0
   > div
 
     border-right: 1px solid #dddddd
@@ -17,6 +21,11 @@
       @extend .borr0md
     &.bort0md
       @extend .bort0md
+    @media screen and (max-width: $tablet - 1)
+       &.w-40sm
+         width: 40%
+       &.w-20sm
+         width: 20%
 
 .table
 
