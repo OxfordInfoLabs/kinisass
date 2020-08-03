@@ -251,18 +251,15 @@ amp-sidebar
 .scroll-to-top
   display: none
   position: fixed
-  bottom: 2rem
-  right: 3rem
+  bottom: 120px
+  right: 0
   z-index: 99
   border: none
   outline: none
   color: white
   cursor: pointer
-  padding: 15px
-  border-radius: 10px
-  font-size: 18px
-  background-color: map_get($colours,brand)
+  background-color: $scrolltop-color
 
   &:hover
-    background-color: lighten(map_get($colours,brand),10%)
+    background-color: darken($scrolltop-color,10%)
 
