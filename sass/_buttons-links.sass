@@ -122,16 +122,14 @@ a.but, button.but
     &:hover
       background-color: transparent
       color: map_get($colours, brand)
-    &.white-text
-      color: white
-      &:hover
-        color: white
+
     &.butwh
       border-radius: 4px
       padding: 0 .3em
 
     &.inv
       text-decoration: none
+
     &.text-colour
       color: $text-color
     &.text-left
@@ -143,6 +141,11 @@ a.but, button.but
     &:hover,
     &:active
       color: $brand
+      &.white-text
+        color: white
+
+    &.white-text
+      color: white
 
   &:first-child
     margin-left: 0
