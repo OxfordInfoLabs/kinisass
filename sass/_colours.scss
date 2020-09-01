@@ -36,6 +36,7 @@ bk: #000,
 rgba40: rgba(0,0,0,.4),
 rgba60: rgba(0,0,0,.6),
 greenshade: rgba($green,0.1),
+        green-darker: darken($green, 5%),
 brandshade: $brandshade
 );
 
