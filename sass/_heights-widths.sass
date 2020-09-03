@@ -1,0 +1,8 @@
+$minHeights: 25, 33, 50
+
+@each $minHeight in $minHeights
+  .minH#{$minHeight}
+    min-height: #{$minHeight}vh
+  @media screen and (min-width: $tablet)
+    .minH#{$minHeight}L
+      min-height: #{$minHeight}vh
