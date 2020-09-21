@@ -230,5 +230,6 @@ $widths: 5 5%, 8 8%, 10 10%, 12 12%, 15 15%, 16 16%, 20 20%, 23 23%, 25 25%, 27 
     margin-right: -50%
 
 .text2col
-  column-count: 2
-  column-gap: 2rem
+  @media screen and (min-width: $tablet)
+    column-count: 2
+    column-gap: 2rem
