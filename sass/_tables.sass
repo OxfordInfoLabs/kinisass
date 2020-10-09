@@ -27,7 +27,7 @@
        &.w-20sm
          width: 20%
 
-.table
+.table, .md table
 
   border-collapse: collapse
   border-spacing: 0
@@ -126,3 +126,12 @@
         border-top-style: solid
         border-bottom: none
 
+.md table
+  margin-bottom: 2.5em
+  td
+    border-bottom: 1px dotted #ddd
+    &:first-child
+      padding-left: 0
+  th
+    &:first-child
+      padding-left: 0
