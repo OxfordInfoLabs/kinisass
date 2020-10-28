@@ -1,4 +1,5 @@
 $minHeights: 25, 33, 50
+$maxWidths: 200,320
 
 @each $minHeight in $minHeights
   .minH#{$minHeight}
@@ -6,5 +7,17 @@ $minHeights: 25, 33, 50
   @media screen and (min-width: $tablet)
     .minH#{$minHeight}L
       min-height: #{$minHeight}vh
+
+
+@each $maxWidth in $maxWidths
+  .maxW#{$maxWidth}
+    max-width: #{$maxWidth}px
+  @media screen and (max-width: $tablet - 1)
+    .maxW#{$maxWidth}S
+      max-width: #{$maxWidth}px
+
+  @media screen and (min-width: $tablet)
+    .maxW#{$maxWidth}L
+      max-width: #{$maxWidth}px
 
 
