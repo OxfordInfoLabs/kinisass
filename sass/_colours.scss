@@ -2,11 +2,12 @@ $brand: #004976;
 $brand-lighter: #007dba;
 $green: #98c03d;
 $orange: #FFB400;
-$red: #bb0000;
+$red: #cc0000;
 $brightred: lighten($red,50%);
 $brandshade: rgba($brand,0.07);
 $link-colour: $brand;
 $scrolltop-color: $green;
+$black: black;
 
 $colours: (
 brand: $brand,
@@ -14,6 +15,7 @@ brand-2: $green,
 brand-lighter: $brand-lighter,
 brand-bright: #00a1ff,
 green: $green,
+black: $black,
 orange: $orange,
 red: $red,
 brightred: $brightred,
